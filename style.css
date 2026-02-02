@@ -308,18 +308,32 @@ a {
 
 /* =========================
    HERO FULL WIDTH
-========================= */
-.hero-full {
+============================
+  .hero-full {
   position: relative;
   min-height: 92vh;
   display: flex;
   align-items: center;
-  .hero-full {
-  background-image: url("img/hero-consultorio.png");
-  background-size: cover;
+  color: #fff;
+
+  /* IMAGEM + GRADIENTE JUNTOS */
+  background:
+    linear-gradient(
+      -45deg,
+      rgba(111,111,111,0.75),
+      rgba(138,138,138,0.75),
+      rgba(201,179,126,0.75),
+      rgba(159,138,90,0.75)
+    ),
+    url("img/hero-consultorio.png");
+
+  background-size: 400% 400%, cover;
+  background-position: 0% 50%, center top;
   background-repeat: no-repeat;
-  background-position: center top;
+
+  animation: gradientMove 15s ease infinite;
 }
+
 
   color: #FFFFFF;
 }
@@ -386,3 +400,21 @@ a {
   }
 }
 
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%, center top;
+  }
+  50% {
+    background-position: 100% 50%, center top;
+  }
+  100% {
+    background-position: 0% 50%, center top;
+  }
+}
+@media (max-width: 767px) {
+  .hero-full {
+    min-height: 85vh;
+    background-position: 0% 40%, center 20%;
+  }
+}
