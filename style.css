@@ -312,32 +312,40 @@ a {
  .hero-full {
   position: relative;
   overflow: hidden;
-  background: #f5f4f1; /* fundo elegante */
+  background: linear-gradient(
+    180deg,
+    #f5f4f1,
+    #eceae5
+  );
 }
 
 .hero-particles {
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle, rgba(201,179,126,0.25) 2px, transparent 2px),
-    radial-gradient(circle, rgba(201,179,126,0.18) 2px, transparent 2px),
-    radial-gradient(circle, rgba(201,179,126,0.12) 2px, transparent 2px);
-  background-size: 120px 120px, 180px 180px, 250px 250px;
-  animation: particlesMove 12s ease-out forwards;
+    radial-gradient(circle, rgba(201,179,126,0.45) 2px, transparent 2px),
+    radial-gradient(circle, rgba(201,179,126,0.35) 2px, transparent 2px),
+    radial-gradient(circle, rgba(201,179,126,0.25) 2px, transparent 2px);
+  background-size: 140px 140px, 220px 220px, 300px 300px;
+  animation: particlesFloat 18s ease-in-out infinite;
   z-index: 0;
 }
 
-@keyframes particlesMove {
-  from {
-    transform: translateY(40px);
+@keyframes particlesFloat {
+  0% {
+    transform: translateY(30px);
     opacity: 0;
   }
-  to {
-    transform: translateY(0);
+  20% {
     opacity: 1;
   }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
 
 /* Conteúdo */
 .hero-content-full {
@@ -345,14 +353,13 @@ a {
   z-index: 2;
   max-width: 700px;
   text-align: left;
-  animation: heroFade 1.2s ease forwards;
+  animation: heroFade 1.4s cubic-bezier(.22,.61,.36,1) forwards;
 }
-
 
 @keyframes heroFade {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(35px);
   }
   to {
     opacity: 1;
@@ -403,5 +410,6 @@ a {
     background-position: 0% 40%, center 20%;
   }
 }
+
 
 
