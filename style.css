@@ -275,6 +275,12 @@ a {
   .hero-image {
     flex: 1;
   }
+}           
+@media (min-width: 768px) {
+  .hero-intro .hero-content {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .location {
@@ -414,6 +420,17 @@ a {
     background-position: 0% 40%, center 20%;
   }
 }
+.hero-intro {
+  padding: 100px 0;
+  background-color: #FAFAF8;
+}
+
+.hero-intro .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 
 
 
