@@ -1,0 +1,247 @@
+/* =========================
+   RESET + BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAF8;
+  color: #2E2E2E;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   VARIÁVEIS (LUXURY PALETTE)
+========================= */
+:root {
+  --gold-light: #E6D3A3;
+  --gold-main: #C9B37E;
+  --gold-dark: #B89B5E;
+
+  --text-dark: #2E2E2E;
+  --bg-light: #FAFAF8;
+
+  --radius: 16px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  padding: 80px 0 70px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 520px;
+  margin: 0 auto 30px;
+  color: #444;
+}
+
+/* =========================
+   BOTÃO DOURADO (CTA)
+========================= */
+.btn-gold {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    var(--gold-main),
+    var(--gold-light),
+    var(--gold-dark)
+  );
+  color: var(--text-dark);
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(201, 179, 126, 0.35);
+}
+
+.btn-gold:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(201, 179, 126, 0.55);
+}
+
+/* =========================
+   SOBRE
+========================= */
+.about {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* =========================
+   SERVIÇOS
+========================= */
+.services {
+  padding: 70px 0;
+}
+
+.services h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+/* =========================
+   CARD PREMIUM
+========================= */
+.service-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--gold-main);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   EXPERIÊNCIA
+========================= */
+.experience {
+  padding: 70px 0;
+  background-color: #F4F4F2;
+}
+
+.experience h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.experience-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.experience-list li {
+  background: #FFFFFF;
+  padding: 22px;
+  border-radius: var(--radius);
+  border-left: 3px solid var(--gold-main);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+}
+
+.experience-list strong {
+  font-weight: 500;
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+.cta-final {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-final h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  margin-bottom: 16px;
+}
+
+.cta-final p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* =========================
+   RESPONSIVO (DESKTOP)
+========================= */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
