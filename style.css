@@ -245,3 +245,32 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .hero-image {
+    flex: 1;
+  }
+}
