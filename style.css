@@ -314,7 +314,13 @@ a {
   min-height: 92vh;
   display: flex;
   align-items: center;
-  background: url("img/hero-consultorio.png") center/cover no-repeat;
+  .hero-full {
+  background-image: url("img/hero-consultorio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
   color: #FFFFFF;
 }
 
@@ -379,3 +385,4 @@ a {
     max-width: 850px;
   }
 }
+
