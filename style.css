@@ -305,3 +305,77 @@ a {
   border-bottom: 1px solid var(--gold-main);
   padding-bottom: 4px;
 }
+
+/* =========================
+   HERO FULL WIDTH
+========================= */
+.hero-full {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  background: url("img/hero-consultorio.png") center/cover no-repeat;
+  color: #FFFFFF;
+}
+
+/* Overlay elegante */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+/* Conteúdo */
+.hero-content-full {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  text-align: left;
+}
+
+.hero-content-full h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.hero-content-full p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  color: #F1F1F1;
+}
+
+/* =========================
+   SELO ATENDIMENTO PARTICULAR
+========================= */
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2E2E2E;
+  background: linear-gradient(
+    135deg,
+    var(--gold-main),
+    var(--gold-light)
+  );
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hero-content-full h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-content-full {
+    max-width: 850px;
+  }
+}
