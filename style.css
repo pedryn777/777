@@ -371,7 +371,9 @@ a {
   font-size: 1.05rem;
   margin-bottom: 30px;
   color: #555555;
+  opacity: 0.95;
 }
+
 
 /* =========================
    SELO ATENDIMENTO PARTICULAR
@@ -410,6 +412,7 @@ a {
     background-position: 0% 40%, center 20%;
   }
 }
+
 
 
 
