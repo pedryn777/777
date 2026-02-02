@@ -50,8 +50,10 @@ a {
    HERO
 ========================= */
 .hero {
-  padding: 80px 0 70px;
-  text-align: center;
+  min-height: 100vh;          /* ocupa a tela inteira */
+  display: flex;
+  align-items: center;        /* CENTRALIZA NA VERTICAL */
+  padding: 80px 0;
 }
 
 .hero h1 {
@@ -263,7 +265,7 @@ a {
 @media (min-width: 768px) {
   .hero-content {
     flex-direction: row;
-    align-items: center;
+    align-items: center;   /* TEXTO E IMAGEM ALINHADOS */
   }
 
   .hero-text {
@@ -412,6 +414,7 @@ a {
     background-position: 0% 40%, center 20%;
   }
 }
+
 
 
 
