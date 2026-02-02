@@ -370,7 +370,7 @@ a {
 .hero-content-full p {
   font-size: 1.05rem;
   margin-bottom: 30px;
-  color: #F1F1F1;
+  color: #555555;
 }
 
 /* =========================
@@ -410,6 +410,7 @@ a {
     background-position: 0% 40%, center 20%;
   }
 }
+
 
 
 
