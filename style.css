@@ -308,7 +308,7 @@ a {
 
 /* =========================
    HERO FULL WIDTH
-============================
+==========================*/
  .hero-full {
   position: relative;
   overflow: hidden;
@@ -397,22 +397,11 @@ a {
   }
 }
 
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%, center top;
-  }
-  50% {
-    background-position: 100% 50%, center top;
-  }
-  100% {
-    background-position: 0% 50%, center top;
-  }
-}
 @media (max-width: 767px) {
   .hero-full {
     min-height: 85vh;
     background-position: 0% 40%, center 20%;
   }
 }
+
 
