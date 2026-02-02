@@ -50,7 +50,6 @@ a {
    HERO
 ========================= */
 .hero {
-  min-height: 100vh;          /* ocupa a tela inteira */
   display: flex;
   align-items: center;        /* CENTRALIZA NA VERTICAL */
   padding: 80px 0;
@@ -430,6 +429,7 @@ a {
   flex-direction: column;
   gap: 40px;
 }
+
 
 
 
