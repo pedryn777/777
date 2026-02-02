@@ -430,6 +430,12 @@ a {
   gap: 40px;
 }
 
+@media (max-width: 767px) {
+  .hero {
+    display: none;
+  }
+}
+
 
 
 
