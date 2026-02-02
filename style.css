@@ -274,3 +274,34 @@ a {
     flex: 1;
   }
 }
+
+.location {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.location h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.location-text {
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto 14px;
+  color: #444;
+}
+
+.location-city {
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.location-link {
+  font-size: 0.9rem;
+  color: var(--gold-dark);
+  font-weight: 500;
+  border-bottom: 1px solid var(--gold-main);
+  padding-bottom: 4px;
+}
