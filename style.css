@@ -447,20 +447,24 @@ a {
 
 .footer-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
 .footer-premium * {
   text-align: center;
 }
 
-
-.footer-slogan {
-  font-size: 1.1rem;
-  margin-bottom: 35px;
-  opacity: 0.95;
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  color: #ffffff;
 }
 
 .footer-contact p {
@@ -493,6 +497,7 @@ a {
   transform: translateY(-4px);
   opacity: 0.85;
 }
+
 
 
 
