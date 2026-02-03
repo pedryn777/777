@@ -435,17 +435,15 @@ a {
 
 /* FOOTER PREMIUM */
 .footer-premium {
-  background: linear-gradient(135deg, #d6b77a, #b9965f);
-  padding: 60px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--gold-main),
+    var(--gold-light)
+  );
+  padding: 80px 20px;
   text-align: center;
   color: #fff;
 }
-
-.footer-premium h2,
-.footer-premium p {
-  color: #fff;
-}
-
 
 .footer-logo {
   font-family: 'Playfair Display', serif;
@@ -475,17 +473,17 @@ a {
 
 .footer-social {
   margin-top: 35px;
-  padding: 20px 0;
 }
 
 .footer-social a {
-  font-size: 1.6rem;
-  margin: 0 12px;
   color: #fff;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 1.7rem;
+  margin: 0 16px;
+  display: inline-block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .footer-social a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   opacity: 0.85;
 }
