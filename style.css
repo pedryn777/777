@@ -458,26 +458,26 @@ a {
   margin: 6px 0;
 }
 
+/* BLOCO DOURADO DAS REDES SOCIAIS */
 .footer-social {
   margin-top: 30px;
+  padding: 25px 0;
+  background: linear-gradient(135deg, #d6b77a, #b9965f);
   display: flex;
   justify-content: center;
   gap: 22px;
-  font-size: 1.4rem;
 }
 
+/* ÍCONES */
 .footer-social a {
   color: #fff;
-  opacity: 0.9;
-  transition: 0.3s;
+  font-size: 22px;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-social a:hover {
-  opacity: 1;
   transform: translateY(-3px);
-}
-
-.footer-social a i {
-  font-size: 1.2rem;
+  opacity: 0.85;
 }
 
