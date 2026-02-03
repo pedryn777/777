@@ -440,9 +440,16 @@ a {
     var(--gold-main),
     var(--gold-light)
   );
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   color: #fff;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .footer-logo {
@@ -487,5 +494,6 @@ a {
   transform: translateY(-4px);
   opacity: 0.85;
 }
+
 
 
