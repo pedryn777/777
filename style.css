@@ -438,12 +438,19 @@ a {
   background: linear-gradient(
     135deg,
     var(--gold-main),
-    var(--gold-light)
+    var(--gold-light),
+    var(--gold-main)
   );
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
+  background-size: 300% 300%;
+  animation: goldShine 8s ease infinite;
 }
+
+@keyframes goldShine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .footer-logo {
   font-family: 'Playfair Display', serif;
@@ -487,3 +494,4 @@ a {
   transform: translateY(-4px);
   opacity: 0.85;
 }
+
