@@ -434,12 +434,20 @@ a {
 }
 
 /* FOOTER PREMIUM */
+
+/* FOOTER PREMIUM */
 .footer-premium {
-  background: #b89b7a;
-  color: #fff;
-  text-align: center;
+  background: linear-gradient(135deg, #d6b77a, #b9965f);
   padding: 60px 20px;
+  text-align: center;
+  color: #fff;
 }
+
+.footer-premium h2,
+.footer-premium p {
+  color: #fff;
+}
+
 
 .footer-logo {
   font-family: 'Playfair Display', serif;
@@ -456,28 +464,13 @@ a {
 .footer-contact p {
   font-size: 1rem;
   margin: 6px 0;
-}
-
-/* BLOCO DOURADO DAS REDES SOCIAIS */
-.footer-social {
-  margin-top: 30px;
-  padding: 25px 0;
-  background: linear-gradient(135deg, #d6b77a, #b9965f);
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-}
-
-/* ÍCONES */
-.footer-social a {
   color: #fff;
-  font-size: 22px;
-  text-decoration: none;
-  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.footer-social a:hover {
-  transform: translateY(-3px);
-  opacity: 0.85;
+.footer-contact {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
 }
-
