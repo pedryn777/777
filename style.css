@@ -498,6 +498,22 @@ a {
   opacity: 0.85;
 }
 
+/* AJUSTE FINAL – TIPOGRAFIA FOOTER */
+
+footer.footer-premium h2.footer-logo {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+}
+
+footer.footer-premium p.footer-slogan {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 400 !important;
+  opacity: 0.95;
+}
+
 
 
 
