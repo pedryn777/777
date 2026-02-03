@@ -477,6 +477,10 @@ a {
   transform: translateY(-3px);
 }
 
+.footer-social a i {
+  font-size: 1.2rem;
+}
+
 
 
 
